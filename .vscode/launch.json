@@ -1,0 +1,39 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run iOS",
+      "request": "launch",
+      "type": "reactnative",
+      "cwd": "${workspaceFolder}",
+      "enableDebug": false,
+      "platform": "ios"
+    },
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Launch Chrome against localhost",
+      "url": "http://localhost:8080",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "name": "Run Android",
+      "request": "launch",
+      "type": "reactnative",
+      "platform": "android",
+      "sourceMaps": true,
+      "outDir": "${workspaceFolder}/.vscode/.react"
+    },
+    {
+      "name": "Attach to packager",
+      "request": "attach",
+      "type": "reactnative",
+      "port": 19001,
+      "sourceMaps": true,
+      "outDir": "${workspaceFolder}/.vscode/.react"
+    }
+  ]
+}
